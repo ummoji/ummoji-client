@@ -1,0 +1,25 @@
+{
+  "name": "ummoji-client",
+  "version": "1.0.0",
+  "description": "queryable, structured emoji metadata",
+  "main": "index.js",
+  "repository": "https://github.com/ummoji/ummoji-client",
+  "author": "zeke",
+  "license": "MIT",
+  "devDependencies": {
+    "emoji-data": "^0.2.0",
+    "emoji-emotion": "^1.0.0",
+    "emoji-rankings": "^1.0.0",
+    "emojilib": "^2.0.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2"
+  },
+  "scripts": {
+    "build": "node build.js > data.json",
+    "test": "node test.js | tap-spec",
+    "pretest": "npm run build"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
