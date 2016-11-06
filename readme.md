@@ -90,7 +90,7 @@ None
 - [emoji-data](https://github.com/mroth/emoji-data-js): Emoji encoding swiss army knife for NodeJS
 - [emoji-emotion](https://github.com/wooorm/emoji-emotion): List of emoji rated for valence in JSON
 - [emoji-rankings](https://github.com/zeke/emoji-rankings): List of emoji ranked by frequency of use on Twitter
-- [emojilib](https://github.com/muan/emojilib): Emoji keyword library.
+- [emoji-synonyms](https://github.com/ummoji/emoji-synonyms): Synonyms for emoji, to make them easier to find
 - [tap-spec](https://github.com/scottcorgan/tap-spec): Formatted TAP output like Mocha&#39;s spec reporter
 - [tape](https://github.com/substack/tape): tap-producing test harness for node and browsers
 

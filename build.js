@@ -1,7 +1,7 @@
 const emojiData = require('emoji-data')
 const emojiRankings = require('emoji-rankings')
 const emojiEmotion = require('emoji-emotion')
-const emojilib = require('emojilib').lib
+const synonyms = require('emoji-synonyms')
 
 const data = emojiData
   .all()
@@ -19,10 +19,7 @@ const data = emojiData
     if (emotion) out.emotion = emotion.polarity
 
     // Add keywords (synonyms), if defined
-    var lib = emojilib[e.short_name]
-    if (lib) {
-      out.keywords = lib.keywords || []
-    }
+    if (synonyms[e.short_name]) out.keywords = synonyms[e.short_name]
 
     return out
   })
